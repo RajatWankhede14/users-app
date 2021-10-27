@@ -41,20 +41,20 @@ function UserCard({ name, email, phone, website, users, setUsers }) {
       <div className="mt-3 flex justify-evenly bg-gray-200 py-3">
         {like ? (
           <HeartIconSolid
-            className="w-8"
+            className="w-8 cursor-pointer"
             color="red"
             onClick={() => setLike(!like)}
           />
         ) : (
           <HeartIcon
-            className="w-8"
+            className="w-8 cursor-pointer"
             color="red"
             onClick={() => setLike(!like)}
           />
         )}
-        <PencilAltIcon className="w-8" color="grey" />
+        <PencilAltIcon className="w-8 cursor-pointer" color="grey" />
         <TrashIcon
-          className="w-8"
+          className="w-8 cursor-pointer"
           color="grey"
           onClick={() => deleteUser(name)}
         />
